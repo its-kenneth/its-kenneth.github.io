@@ -5,20 +5,10 @@ body {
   font-family: sans-serif;
 }
 
-section ol {
-  color: black;
-  text-decoration: none;
+h1, h2 {
+  color: darkslateblue;
 }
 
-section li {
-  color: red;
-  text-decoration: none;
-}
-
-section h1 {
-  color: red;
-}
-
-h1 {
-  color: blue;
+footer {
+  text-align: center;
 }
