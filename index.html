@@ -67,9 +67,17 @@
       paragraph text, bulleted/numbered lists, tables, images, separators, ...
       -->
     </section>
+    <!-- Toggle Button -->
+    <button onclick="toggleMode()">Switch Mode</button>
+
+    <script>
+  // Toggle between dark and light mode
+  function toggleMode() {
+    document.body.classList.toggle('light-mode'); // Add or remove the light-mode class
+  }
+  </script>
 
     <!-- Add more sections for your remaining headers -->
-    
     <!--
     The (optional) <footer> HTML element represents content that appears at the bottom of every page in a group of pages.
     For example, copyright information, licensing terms, contact information.
@@ -81,3 +89,4 @@
     </footer>
   </body>
 </html>
+
