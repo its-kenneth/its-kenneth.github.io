@@ -5,11 +5,12 @@ body {
   font-family: sans-serif;
 }
 
-#smugmug-links {
-  color: red;
+oi {
+  color: black;
+  text-decoration: none;
 }
 
 li {
-  color: black;
+  color: red;
   text-decoration: none;
 }
