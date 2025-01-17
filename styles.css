@@ -1,14 +1,47 @@
 /* This is a CSS comment. Comments are ignored by the browser */
 
 /* Use CSS selectors and rules to style your portfolio page */
+/* This is a CSS comment. Comments are ignored by the browser */
+
+/* Define light mode and dark mode colors using CSS custom properties */
+:root {
+  --bg-color-light: #ffffff; /* Light background */
+  --bg-color-dark: #2c2c2c;  /* Dark background */
+  --text-color-light: #000000; /* Light text color */
+  --text-color-dark: #ffffff;  /* Dark text color */
+  --link-color-light: darkslateblue; /* Light link color */
+  --link-color-dark: lightblue;     /* Dark link color */
+}
+
+/* Use CSS selectors and rules to style your portfolio page */
 body {
   font-family: sans-serif;
+  background-color: var(--bg-color-light); /* Default light background */
+  color: var(--text-color-light); /* Default light text color */
 }
 
+/* Header text */
 h1, h2 {
-  color: darkslateblue;
+  color: var(--link-color-light); /* Default light color for headings */
 }
 
+/* Footer styles */
 footer {
   text-align: center;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-color-dark); /* Dark background */
+    color: var(--text-color-dark); /* Dark text color */
+  }
+
+  h1, h2 {
+    color: var(--link-color-dark); /* Dark color for headings */
+  }
+
+  footer {
+    color: var(--text-color-dark); /* Dark footer text */
+  }
 }
