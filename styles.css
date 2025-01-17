@@ -1,41 +1,17 @@
 /* This is a CSS comment. Comments are ignored by the browser */
 
-/* Define colors for light and dark modes using CSS custom properties */
-:root {
-  --bg-color-dark: #2c2c2c; /* Dark background */
-  --bg-color-light: #ffffff; /* Light background */
-  --text-color-dark: #ffffff; /* Dark text color */
-  --text-color-light: #000000; /* Light text color */
-  --link-color-dark: lightblue; /* Dark link color */
-  --link-color-light: darkslateblue; /* Light link color */
-}
 
-/* Dark Mode - Default */
+
+/* Use CSS selectors and rules to style your portfolio page */
 body {
+  background-color: black;  
+  color: white;
   font-family: sans-serif;
-  background-color: var(--bg-color-dark); /* Default to dark background */
-  color: var(--text-color-dark); /* Default to dark text */
 }
 
 h1, h2 {
-  color: var(--link-color-dark); /* Default dark mode color for headers */
+  color: darkslateblue;
 }
 
 footer {
   text-align: center;
-  color: var(--text-color-dark); /* Default dark mode footer text */
-}
-
-/* Light Mode Override using .light-mode */
-.light-mode {
-  background-color: var(--bg-color-light); /* Light background */
-  color: var(--text-color-light); /* Light text color */
-}
-
-.light-mode h1, .light-mode h2 {
-  color: var(--link-color-light); /* Light color for headers */
-}
-
-.light-mode footer {
-  color: var(--text-color-light); /* Light footer text */
-}
